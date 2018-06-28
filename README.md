@@ -37,29 +37,30 @@ Change [MODULE_NAME] to the name you want
 ``` npm run build ```
 
 #### 2. Push up to master
-``` git add . ```
-``` git commit -m “Initial release” ```
+``` git add . ```\
+``` git commit -m “Initial release” ```\
 ``` git push origin master```
 
 #### 3. Publish package
-Login
+Login\
 ``` npm login ```
 
-For private org
+For private org\
 ``` npm publish ```
 
-For public
+For public\
 ``` npm publish --access=public ```
 
 If you have already published that version to npm you need to update the version
 ``` npm version major | minor | patch ```
-major 1.0.0 -> 2.0.0
-minor 1.0.0 -> 1.1.0
+
+major 1.0.0 -> 2.0.0\
+minor 1.0.0 -> 1.1.0\
 patch 1.0.0 -> 1.0.1
 
-Update Repo
-``` git add . ```
-``` git commit -m "update to version x.x.x ```
+Update Repo\
+``` git add . ```\
+``` git commit -m "update to version x.x.x ```\
 ``` git push origin master ```
 
 # Update README.md
