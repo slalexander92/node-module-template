@@ -73,4 +73,10 @@ Update Repo
 
 ## Installation
 
-    `npm install @spacebartech/[NAME OF MODULE]`
+  `npm install @spacebartech/[NAME OF MODULE]`
+
+## Usage
+
+## Tests
+
+`npm test`
