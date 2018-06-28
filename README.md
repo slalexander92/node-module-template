@@ -42,6 +42,7 @@ Change [MODULE_NAME] to the name you want
 ``` git push origin master```
 
 #### 3. Publish package
+Login
 ``` npm login ```
 
 For private org
