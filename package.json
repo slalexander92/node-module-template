@@ -42,5 +42,8 @@
   },
   "dependencies": {
     "path": "^0.12.7"
+  },
+  "directories": {
+    "test": "test"
   }
 }
