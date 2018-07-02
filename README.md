@@ -31,15 +31,20 @@ In your package.json, make sure that "name," "description," "repository," "bugs,
 
 Change [MODULE_NAME] to the name you want
 
+#### 8. Push up changes
+``` git add . ```\
+``` git commit -m “Update from template” ```\
+``` git push origin master```
+
 # Publish module
 
-#### 1. Build dist
-``` npm run build ```
-
-#### 2. Push up to master
+#### 1. Make sure repo is update with latest version
 ``` git add . ```\
 ``` git commit -m “Initial release” ```\
 ``` git push origin master```
+
+#### 2. Build dist
+``` npm run build ```
 
 #### 3. Publish package
 Login\
