@@ -39,7 +39,7 @@ Change [MODULE_NAME] to the name you want
 
 # Set up semantic release
 
-``` semantic-release-cli ```
+``` semantic-release-cli setup ```
 
 Follow prompt.\
 Pick Travis CI\
