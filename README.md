@@ -36,37 +36,20 @@ Change [MODULE_NAME] to the name you want
 ``` git commit -m “Update from template” ```\
 ``` git push origin master```
 
+
+# Set up semantic release
+
+``` semantic-release-cli ```
+
+Follow prompt.\
+Pick Travis CI\
+Do not make a new travis.yml file\
+
 # Publish module
-
-#### 1. Make sure repo is update with latest version
 ``` git add . ```\
-``` git commit -m “Initial release” ```\
-``` git push origin master```
-
-#### 2. Build dist
-``` npm run build ```
-
-#### 3. Publish package
-Login\
-``` npm login ```
-
-For private org\
-``` npm publish ```
-
-For public\
-``` npm publish --access=public ```
-
-If you have already published that version to npm you need to update the version
-``` npm version major | minor | patch ```
-
-major 1.0.0 -> 2.0.0\
-minor 1.0.0 -> 1.1.0\
-patch 1.0.0 -> 1.0.1
-
-Update Repo\
-``` git add . ```\
-``` git commit -m "update to version x.x.x ```\
+``` git-cz ``` Follow the prompts
 ``` git push origin master ```
+
 
 # Update README.md
   1. Delete instructions
