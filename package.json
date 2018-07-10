@@ -4,8 +4,9 @@
   "description": "[NAME OF MODULE]",
   "main": "dist/[MODULE_NAME].js",
   "scripts": {
-    "test": "mocha --reporter spec",
-    "build": "webpack"
+    "test": "mocha --require babel-core/register --colors ./test/test.js",
+    "build": "webpack",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,17 @@
   },
   "homepage": "https://github.com/SpacebarTech/node-module-template#readme",
   "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
+    "commitizen": "^2.10.1",
     "css-loader": "^0.28.7",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.12.0",
@@ -32,9 +37,12 @@
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-vue": "^4.5.0",
     "file-loader": "^1.1.4",
+    "husky": "^1.0.0-rc.13",
     "mocha": "^5.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^6.0.6",
+    "semantic-release": "^15.7.0",
+    "semantic-release-cli": "^4.0.6",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^4.13.0",
@@ -45,5 +53,19 @@
   },
   "directories": {
     "test": "test"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

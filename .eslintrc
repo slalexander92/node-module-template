@@ -55,5 +55,7 @@
 				"jsx-a11y/href-no-hash": "off"
 	},
 	"globals": {
+    "describe" : true,
+    "it": true
 	}
 }
