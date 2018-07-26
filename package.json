@@ -1,6 +1,6 @@
 {
   "name": "@spacebartech/module-template",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "[NAME OF MODULE]",
   "main": "dist/[MODULE_NAME].js",
   "scripts": {
