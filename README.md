@@ -47,7 +47,7 @@ Do not make a new travis.yml file\
 
 # Publish module
 ``` git add . ```\
-``` git-cz ``` Follow the prompts
+``` git-cz ``` Follow the prompts\
 ``` git push origin master ```
 
 
