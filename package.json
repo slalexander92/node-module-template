@@ -3,6 +3,9 @@
   "version": "0.0.0-development",
   "description": "[NAME OF MODULE]",
   "main": "dist/[MODULE_NAME].js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "test": "mocha --require babel-core/register --colors ./test/test.js",
     "build": "webpack",
@@ -46,11 +49,13 @@
     "travis-deploy-once": "^5.0.1",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
-    "webpack": "^4.13.0",
+    "webpack": "^3.6.0",
     "webpack-cli": "^3.0.8"
   },
   "dependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pug": "^2.0.3",
+    "vue": "^2.5.17"
   },
   "directories": {
     "test": "test"
