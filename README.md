@@ -6,38 +6,38 @@ To start your new project, follow these steps
 
 ``` git clone https://github.com/SpacebarTech/node-module-template.git ```
 
-#### 2. Install all the packages
-
-``` npm install ```
-
-#### 3. Create a new repository for your project
+#### 2. Create a new repository for your project
 
 Do this on github, or send Tim a request to have it done.
 
-#### 4. Remove template.git from your project
+#### 3. Remove template.git from your project
 
 ``` git remote remove origin ```
 
-#### 5. Add your repository to your project
+#### 4. Add your repository to your project
 
 ``` git remote add origin https://github.com/SpacebarTech/[YOUR_PROJECT].git ```
 
-#### 6. Update your package.json so that all fields are filled out correctly
+#### 5. Update your package.json so that all fields are filled out correctly
 
 In your package.json, make sure that "name," "description," "repository," "bugs," and "homepage" are all the correct values for your repository, and not for template.git
 
 
-#### 7. Update webpack.config.js
+#### 6. Update webpack.config.js
 
 Change [MODULE_NAME] to the name you want
 
-#### 8. Push up changes
+#### 7. Push up changes
 ``` git add . ```\
 ``` git commit -m “Update from template” ```\
 ``` git push origin master```
 
 
-# Set up semantic release
+#### 8. Install all the packages
+
+``` npm install ```
+
+#### 9. Set up semantic release
 
 ``` semantic-release-cli setup ```
 
@@ -45,13 +45,12 @@ Follow prompt.\
 Pick Travis CI\
 Do not make a new travis.yml file\
 
-# Publish module
+#### 10. Publish module
 ``` git add . ```\
 ``` git-cz ``` Follow the prompts\
 ``` git push origin master ```
 
-
-# Update README.md
+#### 11. Update README.md
   1. Delete instructions
   2. use template below
 
