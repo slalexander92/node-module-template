@@ -47,6 +47,8 @@ Do not make a new travis.yml file\
 
 #### 10. Setup main.js / main.vue file
 
+Use either the main.js or main.vue file. Delete the other one.
+
 #### 11. Build dist
 
 ``` npm run build ```
