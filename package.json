@@ -2,14 +2,14 @@
   "name": "@spacebartech/module-template",
   "version": "0.0.0-development",
   "description": "[NAME OF MODULE]",
-  "main": "dist/[MODULE_NAME].js",
+  "main": "dist/index.js",
   "files": [
     "dist/"
   ],
   "scripts": {
     "test": "mocha --require babel-core/register --colors ./test/test.js",
     "build": "webpack",
-    "lint": "eslint ./"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
